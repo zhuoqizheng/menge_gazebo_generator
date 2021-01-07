@@ -166,7 +166,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--scene_name", default="CrossStreet", type=str
+        "--scene_name", default="test2", type=str
         )
     parser.add_argument(
         "--plugin", action="store_true"

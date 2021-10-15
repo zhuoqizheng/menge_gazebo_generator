@@ -141,17 +141,17 @@ class WorldGenerator(object):
         max_step_size = et.SubElement(
             physics, "max_step_size"
         )
-        max_step_size.text = "0.01"
+        max_step_size.text = "0.001"
         
         real_time_factor = et.SubElement(
             physics, "real_time_factor"
         )
-        real_time_factor.text = "1"
+        real_time_factor.text = "0"
 
         real_time_update_rate = et.SubElement(
             physics, "real_time_update_rate"
         )
-        real_time_update_rate.text = "100"
+        real_time_update_rate.text = "1000"
 
         tree = et.ElementTree(sdf)
         tree.write(
